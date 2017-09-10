@@ -1,0 +1,317 @@
+[
+  {
+    "id": 1824285236,
+    "name": "Двойная пепперони",
+    "img": "https://dodopizzaru-a.akamaihd.net/Img/Products/Pizza/8d46cad8-bb7c-48a7-bd8a-b739cbb84834.jpg",
+    "desc": "Томатный соус, двойная порция пепперони и увеличенная порция моцареллы",
+    "price": "425"
+  },
+  {
+    "id": 394194689,
+    "name": "Додо",
+    "img": "https://dodopizzaru-a.akamaihd.net/Img/Products/Pizza/9a0462b9-dd16-48dc-9d49-a5ad8c6eb7f6.jpg",
+    "desc": "Томатный соус, говядина (фарш), ветчина, пепперони, красный лук, маслины, сладкий перец, шампиньоны, моцарелла",
+    "price": "425"
+  },
+  {
+    "id": 187263323,
+    "name": "Маргарита",
+    "img": "https://dodopizzaru-a.akamaihd.net/Img/Products/Pizza/9889c7a6-c76b-4ab1-affb-35d682054373.jpg",
+    "desc": "Томатный соус, томаты, увеличенная порция моцареллы, орегано",
+    "price": "325"
+  },
+  {
+    "id": 194524405,
+    "name": "Пепперони",
+    "img": "https://dodopizzaru-a.akamaihd.net/Img/Products/Pizza/9167d51d-fc3c-41cf-b6cb-4ff2ef22ee57.jpg",
+    "desc": "Томатный соус, пепперони, увеличенная порция моцареллы",
+    "price": "395"
+  },
+  {
+    "id": 182318028,
+    "name": "Овощи и грибы",
+    "img": "https://dodopizzaru-a.akamaihd.net/Img/Products/Pizza/08c7b4ce-ab87-4979-a9e7-1ed588c4a971.jpg",
+    "desc": "Томатный соус, брынза, маслины, сладкий перец, томаты, шампиньоны, красный лук, моцарелла, базилик",
+    "price": "395"
+  },
+  {
+    "id": 167561270,
+    "name": "Гавайская",
+    "img": "https://dodopizzaru-a.akamaihd.net/Img/Products/Pizza/2c215be8-4885-4c8a-aea8-8da5e644ce2a.jpg",
+    "desc": "Томатный соус, ананасы, цыпленок, моцарелла",
+    "price": "325"
+  },
+  {
+    "id": 258552709,
+    "name": "Грибы и ветчина",
+    "img": "https://dodopizzaru-a.akamaihd.net/Img/Products/Pizza/6f0397e6-bd8e-4746-9956-fe81ea1f7861.jpg",
+    "desc": "Томатный соус, ветчина, шампиньоны, увеличенная порция моцареллы",
+    "price": "325"
+  },
+  {
+    "id": 1017603326,
+    "name": "Дон Бекон",
+    "img": "https://dodopizzaru-a.akamaihd.net/Img/Products/Pizza/b40add76-5f6b-464c-96d6-597f1b050b58.jpg",
+    "desc": "Томатный соус, бекон, пепперони, цыпленок, красный лук, моцарелла",
+    "price": "425"
+  },
+  {
+    "id": 487539786,
+    "name": "Итальянская",
+    "img": "https://dodopizzaru-a.akamaihd.net/Img/Products/Pizza/9364abf9-268f-449f-841b-54b1335a2c8e.jpg",
+    "desc": "Томатный соус, пепперони, маслины, шампиньоны, моцарелла, орегано",
+    "price": "395"
+  },
+  {
+    "id": 402415861,
+    "name": "Мексиканская",
+    "img": "https://dodopizzaru-a.akamaihd.net/Img/Products/Pizza/66dbbcc3-b762-46da-9f7f-d50859c20492.jpg",
+    "desc": "Томатный соус, халапеньо, сладкий перец, цыпленок, томаты, шампиньоны, красный лук, моцарелла",
+    "price": "395"
+  },
+  {
+    "id": 778600786,
+    "name": "Морская",
+    "img": "https://dodopizzaru-a.akamaihd.net/Img/Products/Pizza/5e8d373f-cc08-48b3-abd5-eaf4683ea641.jpg",
+    "desc": "Томатный соус, креветки, маслины, сладкий перец, красный лук, моцарелла",
+    "price": "425"
+  },
+  {
+    "id": 324151480,
+    "name": "Мясная",
+    "img": "https://dodopizzaru-a.akamaihd.net/Img/Products/Pizza/5b2e0d6b-4e42-47a9-89f6-38b623e7ae8e.jpg",
+    "desc": "Томатный соус, охотничьи колбаски, бекон, ветчина, моцарелла",
+    "price": "425"
+  },
+  {
+    "id": 498521140,
+    "name": "Пицца-пирог",
+    "img": "https://dodopizzaru-a.akamaihd.net/Img/Products/Pizza/51e0fdbf-64dc-4b1f-a494-2be543137dd8.jpg",
+    "desc": "Сгущенное молоко, брусника, ананасы",
+    "price": "325"
+  },
+  {
+    "id": 1886009172,
+    "name": "Ранч пицца",
+    "img": "https://dodopizzaru-a.akamaihd.net/Img/Products/Pizza/beca4a4a-ad7a-4a10-b502-c4cadfb62d68.jpg",
+    "desc": "Соус Ранч, цыпленок, ветчина, томаты, чеснок, моцарелла",
+    "price": "395"
+  },
+  {
+    "id": 511394944,
+    "name": "Сырная",
+    "img": "https://dodopizzaru-a.akamaihd.net/Img/Products/Pizza/6e0d0c8f-f221-4982-87d5-1113e06dd2f9.jpg",
+    "desc": "Томатный соус, брынза, увеличенная порция сыра моцарелла, орегано",
+    "price": "325"
+  },
+  {
+    "id": 224330798,
+    "name": "Сырный цыплёнок",
+    "img": "https://dodopizzaru-a.akamaihd.net/Img/Products/Pizza/db437d2f-10d0-4c42-b671-88b8f902922f.jpg",
+    "desc": "Сырный соус, цыпленок, томаты, моцарелла",
+    "price": "395"
+  },
+  {
+    "id": 300166598,
+    "name": "Цыплёнок барбекю",
+    "img": "https://dodopizzaru-a.akamaihd.net/Img/Products/Pizza/a78fa614-8507-4650-b69f-358d50a049b7.jpg",
+    "desc": "Томатный соус, цыпленок, бекон, красный лук, моцарелла, соус Барбекю",
+    "price": "395"
+  },
+  {
+    "id": 171611781,
+    "name": "Четыре сезона",
+    "img": "https://dodopizzaru-a.akamaihd.net/Img/Products/Pizza/102ef8f5-a007-4591-a4ad-b7c360903af6.jpg",
+    "desc": "Томатный соус, пепперони, ветчина, брынза, томаты, шампиньоны, моцарелла, орегано",
+    "price": "395"
+  },
+  {
+    "id": 441618345,
+    "name": "Чизбургер-пицца",
+    "img": "https://dodopizzaru-a.akamaihd.net/Img/Products/Pizza/07646287-9be9-46d8-a554-9dca494d4564.jpg",
+    "desc": "Сырный соус, говядина (фарш), бекон, соленые огурцы, томаты, красный лук, моцарелла",
+    "price": "395"
+  },
+  {
+    "id": 208107760,
+    "name": "Хит комбо",
+    "img": "https://dodopizzaru-a.akamaihd.net/Img/Products/Combo/516071ee-4a2b-4906-a2bc-cf1ec25910c5.jpg",
+    "desc": "Пепперони 25 см и Кока-Кола 0,5 л",
+    "price": "425"
+  },
+  {
+    "id": 387197150,
+    "name": "Барбекю комбо",
+    "img": "https://dodopizzaru-a.akamaihd.net/Img/Products/Combo/68c56f48-a6a2-441b-ac99-6cbe40e27fed.jpg",
+    "desc": "Цыплёнок барбекю 30 см и крылья Барбекю 10 шт.",
+    "price": "685"
+  },
+  {
+    "id": 259937016,
+    "name": "Мужское комбо",
+    "img": "https://dodopizzaru-a.akamaihd.net/Img/Products/Combo/6c65ea60-f7fa-4a7d-9640-db77e1ca881e.jpg",
+    "desc": "Дон Бекон 30 см, Мясная 30 см, крылья Барбекю 10 шт. и Картофель из печи с орегано",
+    "price": "1245"
+  },
+  {
+    "id": 166082026,
+    "name": "Крылья «Барбекю» 10 шт.",
+    "img": "https://dodopizzaru-a.akamaihd.net/Img/Products/Snacks/de81655b-c574-4ccc-a8af-e2ea251ec7a5.jpg",
+    "desc": "Куриные крылья в маринаде с дымным вкусом",
+    "price": "295"
+  },
+  {
+    "id": 3929596134,
+    "name": "Крылья «Сладкий чили» 10 шт.",
+    "img": "https://dodopizzaru-a.akamaihd.net/Img/Products/Snacks/30762f79-bf1f-4dbb-8964-54d509e42733.jpg",
+    "desc": "Куриные крылья в маринаде с кусочками чили",
+    "price": "295"
+  },
+  {
+    "id": 211589389,
+    "name": "Сэндвич №1",
+    "img": "https://dodopizzaru-a.akamaihd.net/Img/Products/Snacks/6748b79d-f349-4ef7-b47f-3e9af932c627.jpg",
+    "desc": "Говядина, цыпленок, томаты, салат, моцарелла, соус Ранч, чиабатта",
+    "price": "225"
+  },
+  {
+    "id": 196198061,
+    "name": "Сэндвич №2",
+    "img": "https://dodopizzaru-a.akamaihd.net/Img/Products/Snacks/0ecd8838-f2e2-4e97-bee8-62c9dab714a5.jpg",
+    "desc": "Говядина, бекон, томаты, салат, моцарелла, соус Барбекю, чиабатта",
+    "price": "225"
+  },
+  {
+    "id": 629458520,
+    "name": "Сэндвич №3",
+    "img": "https://dodopizzaru-a.akamaihd.net/Img/Products/Snacks/cc467390-4b31-4225-90e7-4d3a8bc05c9d.jpg",
+    "desc": "Ветчина, цыпленок, томаты, салат, моцарелла, соус Чипотл Саусвест, чиабатта",
+    "price": "225"
+  },
+  {
+    "id": 326188843,
+    "name": "Додстер",
+    "img": "https://dodopizzaru-a.akamaihd.net/Img/Products/Snacks/6e2c1bb2-549b-4d18-990a-3802619756c5.jpg",
+    "desc": "Цыпленок, томаты, соус Ранч и моцарелла в пшеничной лепешке. Готовится в печи.",
+    "price": "160"
+  },
+  {
+    "id": 855619852,
+    "name": "Додстеры",
+    "img": "https://dodopizzaru-a.akamaihd.net/Img/Products/Snacks/d5c2e59e-4127-49ba-883d-64d84a5241db.jpg",
+    "desc": "Цыпленок, томаты, соус Ранч и моцарелла в пшеничной лепешке. Готовится в печи.",
+    "price": "315"
+  },
+  {
+    "id": 773797080,
+    "name": "Додстеры",
+    "img": "https://dodopizzaru-a.akamaihd.net/Img/Products/Snacks/57c2d7bc-ff9e-4937-ba42-da3962425b9e.jpg",
+    "desc": "Цыпленок, томаты, соус Ранч и моцарелла в пшеничной лепешке. Готовится в печи.",
+    "price": "595"
+  },
+  {
+    "id": 199845349,
+    "name": "Картофель из печи",
+    "img": "https://dodopizzaru-a.akamaihd.net/Img/Products/Snacks/ef33a69b-34a5-46da-b4de-fdcf32028116.jpg",
+    "desc": "Ароматный картофель приготовленный в печи с орегано. ",
+    "price": "175"
+  },
+  {
+    "id": 174476620,
+    "name": "Кукуруза",
+    "img": "https://dodopizzaru-a.akamaihd.net/Img/Products/Snacks/8f290d70-334b-44c2-944f-370cb6b02630.jpg",
+    "desc": "Два сочных початка кукурузы. Подаются со сливочным маслом и солью.",
+    "price": "235"
+  },
+  {
+    "id": 250839219843,
+    "name": "Наггетсы",
+    "img": "https://dodopizzaru-a.akamaihd.net/Img/Products/Snacks/b189e3b6-3ffa-4d30-8210-d4b9629d932e.jpg",
+    "desc": "Приготовленные в печи кусочки филе цыпленка в панировке, 14 штук",
+    "price": "285"
+  },
+  {
+    "id": 316183891,
+    "name": "Салат Греческий",
+    "img": "https://dodopizzaru-a.akamaihd.net/Img/Products/Snacks/c1037c14-1048-403f-87dd-ab1e629dd53d.jpg",
+    "desc": "Томаты черри, салат Айсберг, брынза, огурец, маслины, сладкий перец, сушеный орегано и оливковое масло",
+    "price": "170"
+  },
+  {
+    "id": 543923137,
+    "name": "Салат Цезарь",
+    "img": "https://dodopizzaru-a.akamaihd.net/Img/Products/Snacks/6f73692a-b4a1-4c85-8800-8b5cf806e0b2.jpg",
+    "desc": "Запеченая куриная грудка, томаты черри, салат Айсберг, гренки, пармезан, сушеный базилик и соус Цезарь",
+    "price": "190"
+  },
+  {
+    "id": 174963418,
+    "name": "Сытные палочки с беконом",
+    "img": "https://dodopizzaru-a.akamaihd.net/Img/Products/Snacks/d15b3fe8-1e6b-49f7-ad56-a5dfd3660adf.jpg",
+    "desc": "Легкие брусочки тонкого теста, покрытые сыром и начинкой из бекона и соуса ранч. 8 палочек",
+    "price": "295"
+  },
+  {
+    "id": 170522924,
+    "name": "Сытные палочки с креветками",
+    "img": "https://dodopizzaru-a.akamaihd.net/Img/Products/Snacks/814b1e44-6cfa-4f7d-8150-a8540ee7fe04.jpg",
+    "desc": "Легкие брусочки тонкого теста, покрытые сыром и начинкой из креветок и сырного соуса. 8 палочек",
+    "price": "295"
+  },
+  {
+    "id": 406876270,
+    "name": "Сытные палочки с охотничьими колбасками",
+    "img": "https://dodopizzaru-a.akamaihd.net/Img/Products/Snacks/50683087-82ea-4e1d-8623-57f8e3faaee8.jpg",
+    "desc": "Легкие брусочки тонкого теста, покрытые сыром и начинкой из охотничьих колбасок с соусом Чипотл Саусвест. 8 палочек",
+    "price": "295"
+  },
+  {
+    "id": 207476609,
+    "name": "Картофельные оладьи",
+    "img": "https://dodopizzaru-a.akamaihd.net/Img/Products/Snacks/c45fe5b7-7ab3-4bee-b990-962f4002e8ba.jpg",
+    "desc": "Картофельные оладьи в панировке. Готовятся в печи.",
+    "price": "75"
+  },
+  {
+    "id": 189051039,
+    "name": "Маффин ванильный, 1 шт.",
+    "img": "https://dodopizzaru-a.akamaihd.net/Img/Products/Desserts/39374a70-d4f3-4cca-800b-63434a41dc0f.jpg",
+    "desc": "Сдобный ванильный кекс",
+    "price": "95"
+  },
+  {
+    "id": 165898955,
+    "name": "Маффин шоколадный, 1 шт.",
+    "img": "https://dodopizzaru-a.akamaihd.net/Img/Products/Desserts/55954e09-5a26-40f4-b938-641a8e2d57a1.jpg",
+    "desc": "Сдобный шоколадный кекс",
+    "price": "95"
+  },
+  {
+    "id": 594405735,
+    "name": "Кукис ванильный, 1 шт.",
+    "img": "https://dodopizzaru-a.akamaihd.net/Img/Products/Desserts/d5ee5ed8-0634-414a-a09a-df0e3daf52c4.jpg",
+    "desc": "Большое и очень нежное ванильное печенье, с кусочками шоколада",
+    "price": "65"
+  },
+  {
+    "id": 290323172,
+    "name": "Кукис шоколадный, 1 шт.",
+    "img": "https://dodopizzaru-a.akamaihd.net/Img/Products/Desserts/ce5d06b5-45f6-45c6-a9b9-75bb6951c6f8.jpg",
+    "desc": "Большое и очень нежное шоколадное печенье, с кусочками шоколада",
+    "price": "65"
+  },
+  {
+    "id": 8801376135,
+    "name": "Чизкейк Нью-Йорк, 1 шт.",
+    "img": "https://dodopizzaru-a.akamaihd.net/Img/Products/Desserts/d803e3ae-ebae-4774-be9c-2bc05f975efd.jpg",
+    "desc": "Классический американский чизкейк. Нежный десерт обладает в меру сладким бархатистым вкусом",
+    "price": "120"
+  },
+  {
+    "id": 176958886,
+    "name": "Фонданы, 2 шт.",
+    "img": "https://dodopizzaru-a.akamaihd.net/Img/Products/Desserts/97942289-8d1b-4497-b324-a6cbc79a0ff5.jpg",
+    "desc": "Шоколадный десерт с хрустящей корочкой и жидкой начинкой. Готовится в нашей печи специально для вас!",
+    "price": "230"
+  }
+]

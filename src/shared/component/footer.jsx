@@ -1,7 +1,7 @@
 // @flow
 
-import React from 'react'
-import { APP_NAME } from '../config'
+import React from "react";
+import {APP_NAME} from "../config";
 
 const Footer = () =>
   <div className="container mt-5">
@@ -9,6 +9,6 @@ const Footer = () =>
     <footer>
       <p>© {APP_NAME} 2017</p>
     </footer>
-  </div>
+  </div>;
 
-export default Footer
+export default Footer;

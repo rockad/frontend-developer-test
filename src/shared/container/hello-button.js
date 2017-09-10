@@ -1,16 +1,16 @@
 // @flow
 
-import { connect } from 'react-redux'
+import {connect} from "react-redux";
 
-import { sayHello } from '../action/hello'
-import Button from '../component/button'
+import {sayHello} from "../action/hello";
+import Button from "../component/button";
 
 const mapStateToProps = () => ({
-  label: 'Say hello',
-})
+  label: "Say hello",
+});
 
 const mapDispatchToProps = dispatch => ({
-  handleClick: () => { dispatch(sayHello('Hello!')) },
-})
+  handleClick: () => { dispatch(sayHello("Hello!")); },
+});
 
-export default connect(mapStateToProps, mapDispatchToProps)(Button)
+export default connect(mapStateToProps, mapDispatchToProps)(Button);

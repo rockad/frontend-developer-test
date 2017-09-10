@@ -1,6 +1,6 @@
 // @flow
 
-import React from 'react'
+import React from "react";
 
 const ModalExample = () =>
   <div className="js-modal-example modal fade">
@@ -18,6 +18,6 @@ const ModalExample = () =>
         </div>
       </div>
     </div>
-  </div>
+  </div>;
 
-export default ModalExample
+export default ModalExample;

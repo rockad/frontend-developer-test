@@ -1,22 +1,15 @@
 // @flow
 
-import Immutable from 'immutable'
-import { createStore, combineReducers, applyMiddleware } from 'redux'
-import thunkMiddleware from 'redux-thunk'
-
-import helloReducer from '../shared/reducer/hello'
+import Immutable from "immutable";
+import {applyMiddleware, createStore} from "redux";
+import thunkMiddleware from "redux-thunk";
+import reducer from "../shared/reducer/reducer";
 
 const initStore = (plainPartialState: ?Object) => {
-  const preloadedState = plainPartialState ? {} : undefined
+  const preloadedState = plainPartialState ? Immutable.fromJS(plainPartialState) : undefined;
 
-  if (plainPartialState && plainPartialState.hello) {
-    // flow-disable-next-line
-    preloadedState.hello = helloReducer(undefined, {})
-      .merge(Immutable.fromJS(plainPartialState.hello))
-  }
+  return createStore(reducer,
+    {}, applyMiddleware(thunkMiddleware));
+};
 
-  return createStore(combineReducers({ hello: helloReducer }),
-    preloadedState, applyMiddleware(thunkMiddleware))
-}
-
-export default initStore
+export default initStore;
