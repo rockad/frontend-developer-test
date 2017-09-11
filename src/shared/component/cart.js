@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import {connect} from "react-redux";
 import {withRouter} from "react-router";
 
-import {clearCart, removeFromCart} from "../action/cart";
+import {clearCart, loadCart, removeFromCart} from "../action/cart";
 
 import isEmpty from "lodash/isEmpty";
 import map from "lodash/map";
@@ -13,11 +13,15 @@ import {CART_MODE_MENU} from "../config";
 @withRouter
 @connect(state => ({
   contents: state.cart.get("contents"),
-}), {clearCart, removeFromCart})
+  isLoading: state.cart.get("isLoading"),
+  loaded: state.cart.get("loaded"),
+  initialized: state.cart.get("initialized"),
+}), {clearCart, removeFromCart, loadCart})
 export default class Cart extends Component {
   static propTypes = {
     clearCart: PropTypes.func.isRequired,
     removeFromCart: PropTypes.func.isRequired,
+    loadCart: PropTypes.func.isRequired,
     mode: PropTypes.string
   };
 
@@ -45,8 +49,13 @@ export default class Cart extends Component {
     }
   };
 
+  componentDidMount() {
+    this.props.loadCart();
+  }
+
+
   render() {
-    const {contents, mode} = this.props;
+    const {contents, mode, isLoading, loaded, initialized} = this.props;
     let products = {};
 
     if (contents && !isEmpty(contents.products)) {
@@ -60,7 +69,16 @@ export default class Cart extends Component {
         <div className="card-header">Корзина</div>
         <div className="card-block">
           {isEmpty(products) ?
-           <div className="card-text">Ничего не выбрано</div>
+           <div className="card-text">
+             {
+               (initialized && !isLoading) ?
+               <span>Ничего не выбрано</span>
+                 :
+               <div className="progress">
+                 <div className="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style={{width: "100%"}} />
+               </div>
+             }
+           </div>
             :
            <table className={`table ${isInMenu && "table-sm"}`}>
              <thead className="thead-default">

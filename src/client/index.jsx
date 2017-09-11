@@ -7,16 +7,15 @@ import ReactDOM from "react-dom";
 import {AppContainer} from "react-hot-loader";
 import {Provider} from "react-redux";
 import {BrowserRouter} from "react-router-dom";
-import {applyMiddleware, compose, createStore} from "redux";
+import {applyMiddleware, compose} from "redux";
 import thunkMiddleware from "redux-thunk";
 import Tether from "tether";
-import Immutable from "immutable";
 
 import App from "../shared/app";
 import {APP_CONTAINER_SELECTOR, JSS_SSR_SELECTOR} from "../shared/config";
-import reducer from "../shared/reducer/reducer";
 import {isProd} from "../shared/util";
 import setUpSocket from "./socket";
+import initStore from "../shared/reducer/init-store";
 
 window.jQuery = $;
 window.Tether = Tether;
@@ -24,15 +23,10 @@ require("bootstrap");
 
 /* eslint-disable no-underscore-dangle */
 const composeEnhancers = (isProd ? null : window["__REDUX_DEVTOOLS_EXTENSION_COMPOSE__"]) || compose;
-const preloadedState = {};
-Object.keys(window["__PRELOADED_STATE__"]).forEach(key => {
-  preloadedState[key] = Immutable.fromJS(window["__PRELOADED_STATE__"][key]);
-});
+const store = initStore(window["__PRELOADED_STATE__"], composeEnhancers(applyMiddleware(thunkMiddleware)));
 delete window["__PRELOADED_STATE__"];
 /* eslint-enable no-underscore-dangle */
 
-const store = createStore(reducer, preloadedState,
-  composeEnhancers(applyMiddleware(thunkMiddleware)));
 
 const rootEl = document.querySelector(APP_CONTAINER_SELECTOR);
 

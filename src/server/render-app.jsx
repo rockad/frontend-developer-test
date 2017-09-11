@@ -7,13 +7,16 @@ import {SheetsRegistry, SheetsRegistryProvider} from "react-jss";
 import {Provider} from "react-redux";
 import {StaticRouter} from "react-router";
 
-import initStore from "./init-store";
+import {applyMiddleware} from "redux";
+import thunkMiddleware from "redux-thunk";
+
+import initStore from "../shared/reducer/init-store";
 import App from "./../shared/app";
 import {APP_CONTAINER_CLASS, JSS_SSR_CLASS, STATIC_PATH, WDS_PORT} from "../shared/config";
 import {isProd} from "../shared/util";
 
 const renderApp = (location: string, plainPartialState: ?Object, routerContext: ?Object = {}) => {
-  const store = initStore(plainPartialState);
+  const store = initStore(plainPartialState, applyMiddleware(thunkMiddleware));
   const sheets = new SheetsRegistry();
   const appHtml = ReactDOMServer.renderToString(
     <Provider store={store}>
