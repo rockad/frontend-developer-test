@@ -1,7 +1,7 @@
 import {actions} from "../action/cart";
 import reducer from "./cart";
 
-const products = require("../data/products.json");
+import products from "../data/products.json";
 
 const product = products[0];
 

@@ -8,7 +8,7 @@ import Immutable from "immutable";
 
 import Menu from "./menu";
 
-const products = require("../data/products.json");
+import products from "../data/products.json";
 
 const initialStateEmpty = {
   cart: Immutable.fromJS({

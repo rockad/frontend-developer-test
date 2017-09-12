@@ -6,7 +6,7 @@ import {addToCart} from "../action/cart";
 import Product from "../component/product";
 import Cart from "./cart";
 
-const products = require("../data/products.json");
+import products from "../data/products.json";
 
 @connect(null, {addToCart})
 export default class Menu extends Component {

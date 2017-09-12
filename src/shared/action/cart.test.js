@@ -4,7 +4,7 @@ import Immutable from "immutable";
 
 import {actions, CART_STORAGE_KEY, loadCart, storeCartData} from "./cart";
 
-const products = require("../data/products.json");
+import products from "../data/products.json";
 
 const product = products[0];
 
