@@ -1,18 +1,16 @@
 // @flow
 
-import {cartPage, homePage} from "./controller";
-
 import {MENU_PAGE_ROUTE, ORDER_PAGE_ROUTE} from "../shared/routes";
 
 import renderApp from "./render-app";
 
 export default (app: Object) => {
   app.get(MENU_PAGE_ROUTE, (req, res) => {
-    res.send(renderApp(req.url, homePage()));
+    res.send(renderApp(req.url));
   });
 
   app.get(ORDER_PAGE_ROUTE, (req, res) => {
-    res.send(renderApp(req.url, cartPage()));
+    res.send(renderApp(req.url));
   });
 
   app.get("/500", () => {

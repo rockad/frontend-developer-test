@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import {connect} from "react-redux";
 
 import {addToCart} from "../action/cart";
+import Product from "../component/product";
 import Cart from "./cart";
 
 const products = require("../data/products.json");
@@ -11,7 +12,12 @@ const products = require("../data/products.json");
 export default class Menu extends Component {
 
   static propTypes = {
-    addToCart: PropTypes.func.isRequired
+    addToCart: PropTypes.func.isRequired,
+    products: PropTypes.array
+  };
+
+  static defaultProps = {
+    products
   };
 
   addToCart = product => () => {
@@ -23,24 +29,9 @@ export default class Menu extends Component {
       <div className="row">
         <div className="col-md-8">
           <div className="row">
-            {products.map(product => (
+            {this.props.products.map(product => (
               <div className="col-md-4" key={product.id}>
-                <div className="card mb-3">
-                  <img className="card-img-top" src={product.img} alt={product.name} />
-                  <div className="card-block">
-                    <h4 className="card-title">{product.name}</h4>
-                    <p className="card-text">{product.desc}</p>
-                    <button
-                      type="button"
-                      className="btn btn-success float-right"
-                      style={{
-                        cursor: "pointer"
-                      }}
-                      onClick={this.addToCart(product)}
-                    >{product.price}&nbsp;₽
-                    </button>
-                  </div>
-                </div>
+                <Product product={product} addToCart={this.addToCart} />
               </div>
             ))}
           </div>

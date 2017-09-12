@@ -1,6 +1,6 @@
 import React from "react";
 import {CART_MODE_ORDER} from "../../config";
-import Cart from "../cart";
+import Cart from "../../container/cart";
 
 const OrderPage = () =>
   <div className="container">

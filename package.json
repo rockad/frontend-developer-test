@@ -7,6 +7,11 @@
   "browserslist": [
     "> 1%"
   ],
+  "jest": {
+    "setupFiles": [
+      "jest-localstorage-mock"
+    ]
+  },
   "scripts": {
     "start": "yarn dev:start",
     "dev": "concurrent --kill-others \"npm run dev:start\" \"npm run dev:wds\"",
@@ -18,8 +23,8 @@
     "lint": "eslint src webpack.config.babel.js --ext .js,.jsx",
     "lint:fix": "eslint src webpack.config.babel.js --ext .js,.jsx --fix",
     "test": "yarn lint && yarn flow && jest --coverage",
-    "#precommit": "yarn test",
-    "#prepush": "yarn test && yarn prod:build"
+    "precommit": "yarn test",
+    "prepush": "yarn test && yarn prod:build"
   },
   "dependencies": {
     "babel-polyfill": "^6.23.0",
@@ -42,8 +47,6 @@
     "redux": "^3.6.0",
     "redux-actions": "^2.0.1",
     "redux-thunk": "^2.2.0",
-    "socket.io": "^1.7.3",
-    "socket.io-client": "^1.7.3",
     "tether": "^1.4.0"
   },
   "devDependencies": {
@@ -63,6 +66,7 @@
     "concurrently": "^3.5.0",
     "coveralls": "^2.12.0",
     "cross-env": "^3.2.3",
+    "enzyme": "^2.9.1",
     "eslint": "^3.17.0",
     "eslint-config-airbnb": "^14.1.0",
     "eslint-plugin-compat": "^1.0.2",
@@ -74,6 +78,7 @@
     "flow-bin": "^0.41.0",
     "husky": "^0.13.2",
     "jest": "^19.0.2",
+    "jest-localstorage-mock": "^1.2.0",
     "nodemon": "^1.11.0",
     "pm2": "^2.4.2",
     "react-test-renderer": "^15.6.1",

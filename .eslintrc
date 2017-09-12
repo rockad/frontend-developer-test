@@ -44,7 +44,8 @@
     "linebreak-style": 0,
     "consistent-return": 0,
     "no-unexpected-multiline": 2,
-    "compat/compat": 2
+    "compat/compat": 2,
+    "no-unused-vars": 1
   },
   "plugins": [
     "react",

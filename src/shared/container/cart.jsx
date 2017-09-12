@@ -25,7 +25,7 @@ export default class Cart extends Component {
     clearCart: PropTypes.func.isRequired,
     removeFromCart: PropTypes.func.isRequired,
     loadCart: PropTypes.func.isRequired,
-    contents: PropTypes.object.isRequired,
+    contents: PropTypes.any,
     mode: PropTypes.string,
     history: PropTypes.object.isRequired,
     isLoading: PropTypes.bool.isRequired,
@@ -33,11 +33,13 @@ export default class Cart extends Component {
   };
 
   static defaultProps = {
-    mode: CART_MODE_MENU
+    mode: CART_MODE_MENU,
+    contents: null
   };
 
   componentDidMount() {
-    this.props.loadCart();
+    this.props.loadCart()
+      .catch(() => {});
   }
 
   clear = () => {
@@ -55,7 +57,6 @@ export default class Cart extends Component {
       history.push(MENU_PAGE_ROUTE);
     }
   };
-
 
   remove = (id: Number) => () => {
     this.props.removeFromCart(id);

@@ -2,7 +2,7 @@
 
 import React from "react";
 import injectSheet from "react-jss";
-import Menu from "../menu";
+import Menu from "../../container/menu";
 
 const styles = {
   hoverMe: {

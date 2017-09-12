@@ -12,22 +12,31 @@ export const LOAD_CART = "LOAD_CART";
 export const LOAD_CART_SUCCESS = "LOAD_CART_SUCCESS";
 export const LOAD_CART_FAILURE = "LOAD_CART_FAILURE";
 
-const CART_STORAGE_KEY = "cart";
+export const CART_STORAGE_KEY = "cart";
 
-function storeCartData(data: Object) {
-  if (data && data.contents) {
-    localStorage.setItem(CART_STORAGE_KEY, JSON.stringify(data.contents));
-    return true;
+export function storeCartData(data: Object) {
+  try {
+    if (data && data.contents) {
+      localStorage.setItem(CART_STORAGE_KEY, JSON.stringify(data.contents));
+      return true;
+    }
+    return false;
+  } catch (e) {
+    return false;
   }
-  return false;
 }
 
 function clearCartData() {
-  localStorage.removeItem(CART_STORAGE_KEY);
+  try {
+    localStorage.removeItem(CART_STORAGE_KEY);
+  } catch (e) {
+    return true;
+  }
+
   return true;
 }
 
-const actions = createActions({
+export const actions = createActions({
   ADD_TO_CART: product => product,
   REMOVE_FROM_CART: productId => productId,
   CLEAR_CART: clearCartData,
@@ -56,7 +65,7 @@ export const removeFromCart = (productId: Object) => (dispatch: Function, getSta
 export const loadCart = () => (dispatch: Function) => {
   dispatch(actions.loadCart());
 
-  return new Promise((resolve, reject) => {
+  return new Promise((resolve) => {
     try {
       // flow-disable-next-line
       const cart = JSON.parse(localStorage.getItem(CART_STORAGE_KEY));
@@ -70,8 +79,8 @@ export const loadCart = () => (dispatch: Function) => {
         return resolve(null);
       }
     } catch (e) {
-      dispatch(actions.loadCartFailure("Cart data loading failed!"));
-      return reject(null);
+      dispatch(actions.loadCartFailure("Cart data could not be loaded"));
+      return resolve(null);
     }
   });
 };
