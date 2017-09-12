@@ -22,9 +22,10 @@ window.Tether = Tether;
 require("bootstrap");
 
 /* eslint-disable no-underscore-dangle */
-const composeEnhancers = (isProd ? null : window["__REDUX_DEVTOOLS_EXTENSION_COMPOSE__"]) || compose;
-const store = initStore(window["__PRELOADED_STATE__"], composeEnhancers(applyMiddleware(thunkMiddleware)));
-delete window["__PRELOADED_STATE__"];
+const composeEnhancers = (isProd ? null : window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__) || compose;
+const store = initStore(window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__,
+  composeEnhancers(applyMiddleware(thunkMiddleware)));
+delete window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__;
 /* eslint-enable no-underscore-dangle */
 
 

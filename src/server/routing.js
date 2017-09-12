@@ -2,7 +2,7 @@
 
 import {cartPage, homePage} from "./controller";
 
-import {ORDER_PAGE_ROUTE, MENU_PAGE_ROUTE,} from "../shared/routes";
+import {MENU_PAGE_ROUTE, ORDER_PAGE_ROUTE} from "../shared/routes";
 
 import renderApp from "./render-app";
 
@@ -29,4 +29,4 @@ export default (app: Object) => {
     console.error(err.stack);
     res.status(500).send("Something went wrong!");
   });
-}
+};

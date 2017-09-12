@@ -1,3 +1,4 @@
+// @flow
 import type {fromJS as Immut} from "immutable";
 import Immutable from "immutable";
 

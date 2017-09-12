@@ -5,11 +5,12 @@ import {createStore} from "redux";
 
 import reducer from "./reducer";
 
-const initStore = (plainPartialState: ?Object, enhancers) => {
-  let preloadedState = {};
+const initStore = (plainPartialState: ?Object, enhancers: ?Object) => {
+  const preloadedState = {};
 
   if (plainPartialState) {
-    Object.keys(plainPartialState).forEach(key => {
+    Object.keys(plainPartialState).forEach((key) => {
+      // flow-disable-next-line
       preloadedState[key] = Immutable.fromJS(plainPartialState[key]);
     });
   }

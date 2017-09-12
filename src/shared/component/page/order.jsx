@@ -9,7 +9,7 @@ const OrderPage = () =>
         <h1>Оформление заказа</h1>
       </div>
     </div>
-    <Cart mode={CART_MODE_ORDER}/>
+    <Cart mode={CART_MODE_ORDER} />
   </div>;
 
 export default OrderPage;

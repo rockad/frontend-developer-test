@@ -34,52 +34,45 @@ const actions = createActions({
   STORE_CART: storeCartData,
   LOAD_CART: null,
   LOAD_CART_SUCCESS: null,
-  LOAD_CART_FAILURE: null,
+  LOAD_CART_FAILURE: null
 });
 
 
-export const addToCart = product => (dispatch: Function, getState: Function) => {
-  const {addToCart, storeCart} = actions;
-  dispatch(addToCart(product));
+export const addToCart = (product: Object) => (dispatch: Function, getState: Function) => {
+  dispatch(actions.addToCart(product));
 
   const {cart} = getState();
-  dispatch(storeCart(cart.toJS()));
+  dispatch(actions.storeCart(cart.toJS()));
 };
 
 
-export const removeFromCart = productId => (dispatch: Function, getState: Function) => {
-  const {removeFromCart, storeCart} = actions;
-  dispatch(removeFromCart(productId));
+export const removeFromCart = (productId: Object) => (dispatch: Function, getState: Function) => {
+  dispatch(actions.removeFromCart(productId));
 
   const {cart} = getState();
-  dispatch(storeCart(cart.toJS()));
+  dispatch(actions.storeCart(cart.toJS()));
 };
 
 export const loadCart = () => (dispatch: Function) => {
-  const {loadCart, loadCartSuccess, loadCartFailure} = actions;
-
-  dispatch(loadCart());
+  dispatch(actions.loadCart());
 
   return new Promise((resolve, reject) => {
-    const cartData = localStorage.getItem(CART_STORAGE_KEY);
-
     try {
+      // flow-disable-next-line
       const cart = JSON.parse(localStorage.getItem(CART_STORAGE_KEY));
       if (cart) {
         setTimeout(() => {
-          dispatch(loadCartSuccess(cart));
+          dispatch(actions.loadCartSuccess(cart));
           return resolve(cart);
         }, 500);
       } else {
-        dispatch(loadCartFailure("No cart data!"));
+        dispatch(actions.loadCartFailure("No cart data!"));
         return resolve(null);
       }
     } catch (e) {
-      dispatch(loadCartFailure("Cart data loading failed!"));
+      dispatch(actions.loadCartFailure("Cart data loading failed!"));
       return reject(null);
     }
-
-
   });
 };
 

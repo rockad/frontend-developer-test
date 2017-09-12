@@ -21,7 +21,7 @@ const styles = {
   },
 };
 
-const HomePage = ({classes}: { classes: Object }) =>
+const HomePage = () =>
   <div className="container">
     <div className="row mt-4 mb-3">
       <div className="col-md-12">

@@ -1,5 +1,3 @@
-// @flow
-
 import "isomorphic-fetch";
 
 import {createAction} from "redux-actions";
@@ -15,7 +13,7 @@ export const sayHelloAsyncRequest = createAction(SAY_HELLO_ASYNC_REQUEST);
 export const sayHelloAsyncSuccess = createAction(SAY_HELLO_ASYNC_SUCCESS);
 export const sayHelloAsyncFailure = createAction(SAY_HELLO_ASYNC_FAILURE);
 
-export const sayHelloAsync = (num: number) => (dispatch: Function) => {
+export const sayHelloAsync = num => (dispatch) => {
   dispatch(sayHelloAsyncRequest());
   return fetch(helloEndpointRoute(num), {method: "GET"})
     .then((res) => {
@@ -31,6 +29,6 @@ export const sayHelloAsync = (num: number) => (dispatch: Function) => {
       dispatch(sayHelloAsyncSuccess(data.serverMessage));
     })
     .catch(() => {
-      dispatch(sayHelloAsyncFailure())
-    })
-}
+      dispatch(sayHelloAsyncFailure());
+    });
+};

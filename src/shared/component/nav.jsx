@@ -2,13 +2,12 @@
 
 import $ from "jquery";
 import React from "react";
-import {Link, NavLink} from "react-router-dom";
+import {Link} from "react-router-dom";
 import {APP_NAME} from "../config";
-import {ORDER_PAGE_ROUTE, MENU_PAGE_ROUTE,} from "../routes";
+import {MENU_PAGE_ROUTE} from "../routes";
 
 const handleNavLinkClick = () => {
   $("body").scrollTop(0);
-  $(".js-navbar-collapse").collapse("hide");
 };
 
 const Nav = () =>
@@ -16,7 +15,7 @@ const Nav = () =>
     <button className="navbar-toggler navbar-toggler-right" type="button" role="button" data-toggle="collapse" data-target=".js-navbar-collapse">
       <span className="navbar-toggler-icon" />
     </button>
-    <Link to={MENU_PAGE_ROUTE} className="navbar-brand">{APP_NAME}</Link>
+    <Link to={MENU_PAGE_ROUTE} className="navbar-brand" onClick={handleNavLinkClick}>{APP_NAME}</Link>
   </nav>;
 
 export default Nav;

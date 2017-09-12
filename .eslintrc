@@ -1,14 +1,20 @@
 {
-  "extends": "airbnb",
+  "extends": [
+    "airbnb",
+    "plugin:flowtype/recommended"
+  ],
   "env": {
     "browser": true,
     "node": true,
     "mocha": true,
     "es6": true,
-    "mongo": true
+    "mongo": true,
+    "jest": true
   },
   "rules": {
     "react/no-multi-comp": 0,
+    "react/forbid-prop-types": 0,
+    "react/jsx-indent": 0,
     "import/default": 0,
     "import/no-duplicates": 0,
     "import/named": 0,
@@ -25,12 +31,26 @@
       }
     ],
     "no-console": 0,
-    "no-alert": 0
+    "no-alert": 0,
+    "semi": [
+      "warn",
+      "always"
+    ],
+    "quotes": [
+      "error",
+      "double"
+    ],
+    "object-curly-spacing": 0,
+    "linebreak-style": 0,
+    "consistent-return": 0,
+    "no-unexpected-multiline": 2,
+    "compat/compat": 2
   },
   "plugins": [
     "react",
     "import",
-    "flowtype"
+    "flowtype",
+    "compat"
   ],
   "settings": {
     "import/parser": "babel-eslint",
@@ -39,7 +59,10 @@
         "node_modules",
         "src"
       ]
-    }
+    },
+    "polyfills": [
+      "fetch"
+    ]
   },
   "globals": {
     "__DEVELOPMENT__": true,

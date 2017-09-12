@@ -15,14 +15,14 @@ class CartModel {
     const id = product.id;
     const price = parseInt(product.price, 10);
 
-    if (this.products.hasOwnProperty(id)) {
-      this.products[id].qty++;
+    if (Object.prototype.hasOwnProperty.call(this.products, id)) {
+      this.products[id].qty += 1;
       this.products[id].total += price;
     } else {
       this.products[id] = {...product, qty: 1, total: price};
     }
 
-    this.totalQty++;
+    this.totalQty += 1;
     this.totalPrice += price;
   };
 

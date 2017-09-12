@@ -12,7 +12,7 @@ import Footer from "./component/footer";
 import Nav from "./component/nav";
 import NotFoundPage from "./component/page/not-found";
 import {APP_NAME} from "./config";
-import {ORDER_PAGE_ROUTE, MENU_PAGE_ROUTE,} from "./routes";
+import {MENU_PAGE_ROUTE, ORDER_PAGE_ROUTE, } from "./routes";
 
 const App = () =>
   (<div style={{paddingTop: 54}}>
